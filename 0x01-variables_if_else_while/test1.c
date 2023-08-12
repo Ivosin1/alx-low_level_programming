@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - Begin program from here
@@ -10,10 +8,11 @@
 
 int main(void)
 {
-	int n;
-
-	for (n = 0; n <= 9; n++)
-		printf("%d", n);
-	printf("\n");
-	return (0);
+	for (char k = 'a'; k <= 'z'; k++)
+	{
+		if (k != 'q' && k != 'e')
+		putchar(k);
+	}
+	putchar('\n');
+		return (0);
 }
