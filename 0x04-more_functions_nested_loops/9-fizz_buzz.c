@@ -11,7 +11,7 @@ int main(void)
 {
 	int k;
 
-	while (k++ < 100)
+	for (k = 1; k <= 100; k++)
 
 		if ((k % 3 == 0) && (k % 5 == 0))
 			printf("FizzBuzz ");
@@ -25,7 +25,7 @@ int main(void)
 				printf("Buzz ");
 
 			else
-				printf("Buzz ");
+				printf("Buzz");
 		}
 
 		else
