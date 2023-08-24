@@ -11,7 +11,7 @@ int main(void)
 {
 	int k;
 
-	for (k = 1; k <= 100; k++)
+	while (k++ < 100)
 
 		if ((k % 3 == 0) && (k % 5 == 0))
 			printf("FizzBuzz ");
