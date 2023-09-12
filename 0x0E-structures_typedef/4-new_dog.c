@@ -1,43 +1,40 @@
-#include <stdlib.h>
 #include "dog.h"
-
+#include <stdlib.h>
 
 /**
- * _strlen - returns the length of a string
- * @s: string to evaluate
- *
- * Return: the length of the string
+ * _strlen - Gives the length of a string.
+ * @s: String to be checked.
+ * Return: the length of the string.
  */
+
 int _strlen(char *s)
 {
-	int i;
+	int k;
 
 
-	i = 0;
+	k = 0;
 
 
-	while (s[i] != '\0')
+	while (s[k] != '\0')
 	{
-		i++;
+		k++;
 	}
 
 
-	return (i);
+	return (k);
 }
 
-
 /**
- * *_strcpy - copies the string pointed to by src
- * including the terminating null byte (\0)
- * to the buffer pointed to by dest
- * @dest: pointer to the buffer in which we copy the string
- * @src: string to be copied
- *
- * Return: the pointer to dest
+ * *_strcpy - copies the string pointed to by src including the
+ * terminating null byte (\0) to the buffer pointed to by dest.
+ * @dest: Pointer to the buffer in which we copy the string to.
+ * @src: Where string is to be copied from.
+ * Return: Pointer to destination.
  */
+
 char *_strcpy(char *dest, char *src)
 {
-	int len, i;
+	int len, k;
 
 
 	len = 0;
@@ -49,25 +46,25 @@ char *_strcpy(char *dest, char *src)
 	}
 
 
-	for (i = 0; i < len; i++)
+	for (k = 0; k < len; k++)
 	{
-		dest[i] = src[i];
+		dest[k] = src[k];
 	}
-	dest[i] = '\0';
+	dest[k] = '\0';
 
 
 	return (dest);
 }
 
-
 /**
- * new_dog - creates a new dog
- * @name: name of the dog
- * @age: age of the dog
- * @owner: owner of the dog
- *
- * Return: pointer to the new dog (Success), NULL otherwise
+ * new_dog - Creates a new dog.
+ * @name: Name of the dog.
+ * @age: Age of the dog
+ * @owner: Dog owner's name.
+ * Return: pointer to the new dog (To ascertain Success)
+ * NULL if otherwise.
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
@@ -103,4 +100,3 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	return (dog);
 }
-
