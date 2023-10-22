@@ -1,1 +1,0 @@
-For the 0x15 task
