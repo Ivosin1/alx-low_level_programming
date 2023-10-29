@@ -8,10 +8,14 @@
 
 int main(void)
 {
-	char zyx;
+	char rev_alph = 'z';
 
-	for (zyx = 'z'; zyx >= 'a'; zyx--)
-		putchar(zyx);
-	putchar(10);
+	while (rev_alph >= 'a')
+	{
+		putchar(rev_alph);
+		rev_alph--;
+	}
+	putchar('\n');
+
 	return (0);
 }
