@@ -7,14 +7,15 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char k = 'a';
+	char alph = 'a';
 
-	while (k <= 'z')
+	while (alph <= 'z')
 	{
-		putchar(k);
-		k++;
+		putchar(alph);
+		alph++;
 	}
 	putchar('\n');
 	return (0);
