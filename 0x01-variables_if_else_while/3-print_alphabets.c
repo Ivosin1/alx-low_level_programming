@@ -1,19 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - Begin program from here
+ * main - Begin program from here.
  *
- * Return: Always 0 (To ascertain success)
+ * Return: Always 0 (To ascertain success).
  */
 
 int main(void)
 {
-	char k, m;
+	char alph = 'a';
+	char ALPH = 'A';
 
-	for (k = 'a'; k <= 'z'; k++)
-		putchar(k);
-	for (m = 'A'; m <= 'Z'; m++)
-		putchar(m);
+	while (alph <= 'z')
+	{
+		putchar(alph);
+		alph++;
+	}
+	while (ALPH <= 'Z')
+	{
+		putchar(ALPH);
+		ALPH++;
+	}
 	putchar('\n');
 	return (0);
 }
