@@ -8,14 +8,20 @@
 
 int main(void)
 {
-	int h;
-	char m;
+	int num = '0';
+	char alph = 'a';
 
-	for (h = '0'; h <= '9'; h++)
-		putchar(h);
-	for (m = 'a'; m <= 'f'; m++)
-		putchar(m);
-	putchar ('\n');
+	while (num <= '9')
+	{
+		putchar(num);
+		num++;
+	}
+	while (alph <= 'f')
+	{
+		putchar(alph);
+		alph++;
+	}
+	putchar('\n');
 
 	return (0);
 }
