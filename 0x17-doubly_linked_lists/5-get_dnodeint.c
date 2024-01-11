@@ -4,8 +4,8 @@
  * get_dnodeint_at_index - A function that gets a node at index
  * @head: The double pointer to the head of list to look through.
  * @index: The index of node to find and return.
- * 
- * Return: A pointer to node if found, or NULL in otherwise
+ *
+ * Return: A pointer to node if found, or NULL in otherwise.
  * where index is the index of the node, beginning from 0.
  */
 

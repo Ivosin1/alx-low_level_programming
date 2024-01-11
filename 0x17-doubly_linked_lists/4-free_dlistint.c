@@ -3,7 +3,7 @@
 /**
  * free_dlistint - A function that frees a doubly linked list
  * @head: The pointer to head of doubly linked list to be freed.
- * 
+ *
  * Return: Nothing
  */
 
